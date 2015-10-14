@@ -3,31 +3,30 @@ using System.Collections;
 
 public class Classes : MonoBehaviour 
 {
-
 	public class Health
 	{
-		public int maxHP;
-		public int currentHP;
-		public int minimumHP;
-
-		public Health (int maxHP, int currentHP)
+	public int BaseHealth;
 	
-		{
 
 
-	
-			maxHP = 100;
-			currentHP = maxHP;
-			currentHP = 58;
-			minimumHP = 20;
-			
-		}
-		public Health characterHealth = new Health (150);
-		public Health followerHealth = new Health (12);
-	}
-	void Start () 
+	public Health (int maxHP)
 	{
-		Debug.Log(characterHealth.currentHP);
+		BaseHealth = maxHP;
+		
+		}
 
+		public Health ()
+		{
+			BaseHealth = 100;
+		}
 	}
+		public Health MyHealth = new Health (150);
+
+
+
+	void Start()
+{
+	Debug.Log (MyHealth.BaseHealth);
+
+}
 }
