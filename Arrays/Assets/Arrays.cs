@@ -7,5 +7,8 @@ public class Arrays : MonoBehaviour
 
 	void Start ()
 	{
-		for(int i = 0; i < MyArray.Length i++) 
-
+		for(int i = 0; i < MyArray.Length; i++)
+	}
+	Debug.Log("Player Number"+if+" is named "+player [i]
+	 
+	         
