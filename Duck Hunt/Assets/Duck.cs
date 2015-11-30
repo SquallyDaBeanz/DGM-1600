@@ -3,13 +3,12 @@ using System.Collections;
 
 public class Duck : MonoBehaviour 
 {
-	public void OnTiggerEnter(Collider hit)
+
+	void OnTriggerEnter(Collider hit)
 	{
-		print ("test");
 		if(hit.tag == "KillZone")
 		{
-			Destroy(this.gameObject);
+			Destroy (this.gameObject);
 		}
 	}
-
 }
