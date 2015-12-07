@@ -34,6 +34,9 @@ public class Shooter : MonoBehaviour
 			{
 				if(hit.transform.tag == "Duck")
 				{
+					GetComponent<Duck>();
+
+
 					//use getcomponent in hit to get the duck health script. (script that deletes the duck) Killzone? or just "Duck" script. Using that, call the killduck in duck health script. For the KillDuck function.
 				}
 			}
