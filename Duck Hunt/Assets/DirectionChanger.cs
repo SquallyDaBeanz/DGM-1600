@@ -7,6 +7,13 @@ public class DirectionChanger : MonoBehaviour
 	public Changer changer;
 
 	void onCollisionEnter(Collision hit)
+
+	void Start()
+	{
+		GameManager.OnDuckShot += TurnOff;
+		GameManager.OnDuckMiss += Turnoff;
+		GameManager.OnSpawnDucks += TurnOn;
+
 	{
 		if (hit.transform.tag == "Duck") 
 		{
@@ -24,5 +31,15 @@ public class DirectionChanger : MonoBehaviour
 			}
 		}
 	}
+
+	public void TurnOff()
+	{
+		GameObject.SetActive (false);
+	}
+	public void TurnOn()
+	{
+		GameObject.SetActive (true);
+	}
+
 }
 	

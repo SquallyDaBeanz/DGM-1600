@@ -11,7 +11,7 @@ public class Shooter : MonoBehaviour
 
 	void start()
 	{
-
+		GameManager.OnSpawnDucks += ResetBullets;
 	}
 
 	void update()
@@ -38,5 +38,11 @@ public class Shooter : MonoBehaviour
 				}
 			}
 		}
+	}
+
+	public void ResetBullets ()
+	
+	{
+		bulletAmt = maxBullets;
 	}
 }
