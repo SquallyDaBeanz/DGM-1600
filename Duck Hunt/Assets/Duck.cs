@@ -32,15 +32,15 @@ public class Duck : MonoBehaviour
 
 	public void KillDuck()
 	{
-		if(IsInvincible == false)
-		{
-			Animator.Play("DuckDead");
-			GameManager.OnDuckShot();
+		if (IsInvincible == false) {
+			anim.Play ("DuckDead");
+			GameManager.OnDuckShot ();
 
-
+		}
+	}
 	public void MakeInvincible()
 	{
-		isInvincible = true;
+		IsInvincible = true;
 	}
 
 }

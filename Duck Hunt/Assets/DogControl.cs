@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NewBehaviourScript : MonoBehaviour 
 {
-	Animator animl
+	Animator anim;
 
 	void Start ()
 	{
@@ -17,7 +17,7 @@ public class NewBehaviourScript : MonoBehaviour
 	//}
 	public void SpawnDuck()
 	{
-		GameManager.OnSpawnDucks()
+		GameManager.OnSpawnDucks ();
 	}
 	public void PlayLaugh()
 	{

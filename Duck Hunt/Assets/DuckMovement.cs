@@ -55,12 +55,12 @@ public class DuckMovement : MonoBehaviour
 }
 
 
-	public void StartFall();
+	public void StartFall()
 {
 	direction = new Vector3(0, -1, 0);
 }
 
-public void FlyAway();
+public void FlyAway()
 
 	{
 	direction = new Vector3(0, 1, 0);
