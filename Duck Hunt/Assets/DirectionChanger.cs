@@ -12,17 +12,18 @@ public class DirectionChanger : MonoBehaviour
 		GameManager.OnDuckMiss += TurnOff;
 		GameManager.OnSpawnDucks += TurnOn;
 	}
-		void onCollisionEnter(Collision hit)
+		void OnCollisionEnter(Collision hit)
 	{
 		if (hit.transform.tag == "Duck") 
 		
 			{
+		
 			DuckMovement movement = hit.gameObject.GetComponent<DuckMovement> ();
 
 			if (changer == Changer.Horizontal) 
 			{
 
-				movement.DirectionChanger (new Vector3(-1, 0, 0));
+				movement.DirectionChanger (new Vector3(-1, 1, 0));
 			} 
 
 			else if(changer == Changer.Vertical)

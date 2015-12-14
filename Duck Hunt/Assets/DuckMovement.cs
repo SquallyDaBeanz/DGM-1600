@@ -28,7 +28,7 @@ public class DuckMovement : MonoBehaviour
 	public void RandomDirection()
 
 	{
-		direction = new Vector3(Random.Range (-1f, 1f), Random.Range (.2f, -1f), 0f);
+		direction = new Vector3(Random.Range (-1f, 1f), Random.Range (.2f, 1f), 0f);
 	}
 
 	public void DirectionChanger(Vector3 _dir)
